@@ -14,7 +14,7 @@ class TweetsTest < ApplicationSystemTestCase
     visit tweets_url
     click_on "New Tweet"
 
-    fill_in "Contect", with: @tweet.contect
+    fill_in "Content", with: @tweet.content
     fill_in "User", with: @tweet.user_id
     click_on "Create Tweet"
 
@@ -26,7 +26,7 @@ class TweetsTest < ApplicationSystemTestCase
     visit tweets_url
     click_on "Edit", match: :first
 
-    fill_in "Contect", with: @tweet.contect
+    fill_in "Content", with: @tweet.content
     fill_in "User", with: @tweet.user_id
     click_on "Update Tweet"
 

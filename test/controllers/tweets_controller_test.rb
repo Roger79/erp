@@ -17,7 +17,7 @@ class TweetsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create tweet" do
     assert_difference('Tweet.count') do
-      post tweets_url, params: { tweet: { contect: @tweet.contect, user_id: @tweet.user_id } }
+      post tweets_url, params: { tweet: { content: @tweet.content, user_id: @tweet.user_id } }
     end
 
     assert_redirected_to tweet_url(Tweet.last)
@@ -34,7 +34,7 @@ class TweetsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update tweet" do
-    patch tweet_url(@tweet), params: { tweet: { contect: @tweet.contect, user_id: @tweet.user_id } }
+    patch tweet_url(@tweet), params: { tweet: { content: @tweet.content, user_id: @tweet.user_id } }
     assert_redirected_to tweet_url(@tweet)
   end
 
