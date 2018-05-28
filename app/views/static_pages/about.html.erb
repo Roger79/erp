@@ -1,2 +1,12 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<% provide(:title, "About | Global ERP")%>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= yield(:title)%></title>
+</head>
+<body>
+	<h1>Global ERP<h1>
+	<p> We are not a company, we are not a person, we are a community who defined their goal to create the best open source ERP on the globe whis is for free for all.</p>
+</body>
+</html>
