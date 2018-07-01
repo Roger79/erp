@@ -1,12 +1,12 @@
-<% provide(:title, "Home | Global ERP")%>
+<% provide(:title, "Home")%>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title><%= yield(:title)%></title>
+	<title><%= full_title(yield(:title)) %></title>
 </head>
 <body>
-	<h1>Global ERP<h1>
+	<h1><%= full_title(yield(:title)) %><h1>
 	<p> At your work, have you ever thought that the ERP is far away from Industry 4.0? You was struggly all the time to analyse the data or your clients went several time created in your system or information went not accurate at all. With Global ERP we change the way of ERP-System. How?</p>
 </body>
 </html>

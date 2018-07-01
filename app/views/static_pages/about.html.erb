@@ -1,12 +1,12 @@
-<% provide(:title, "About | Global ERP")%>
+<% provide(:title, "About")%>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title><%= yield(:title)%></title>
+	<title><%= full_title(yield(:title)) %></title>
 </head>
 <body>
-	<h1>Global ERP<h1>
+	<h1><%= full_title(yield(:title)) %><h1>
 	<p> We are not a company, we are not a person, we are a community who defined their goal to create the best open source ERP on the globe whis is for free for all.</p>
 </body>
 </html>

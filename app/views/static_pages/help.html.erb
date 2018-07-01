@@ -1,12 +1,12 @@
-<% provide(:title, "Help | Global ERP")%>
+<% provide(:title, "Help")%>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title><%= yield(:title)%></title>
+	<title><%= full_title(yield(:title)) %></title>
 </head>
 <body>
-	<h1>Global ERP<h1>
+	<h1><%= full_title(yield(:title)) %><h1>
 	<p> If you want to be a part of the community write a mail to me and join the community.</p>
 </body>
 </html>
