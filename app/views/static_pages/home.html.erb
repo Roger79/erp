@@ -6,8 +6,17 @@
 	<title><%= full_title(yield(:title)) %></title>
 </head>
 <body>
-	<h1><%= full_title(yield(:title)) %><h1>
-	<p> At your work, have you ever thought that the ERP is far away from Industry 4.0? You was struggly all the time to analyse the data or your clients went several time created in your system or information went not accurate at all. With Global ERP we change the way of ERP-System. How?</p>
+	<div class="center jumbotron"> 
+	<h1><%= full_title(yield(:title)) %></h1>
+	
+	<h2>
+		This is the home page of the Global ERP 
+		<a href="http://localhost:3000"> THE GLOBAL ERP</a>
+	</h2>
+
+	<%= link_to "Sign up now!" , '#', class: "btn btn-lg btn-primary" %>
+
+</div>
 </body>
 </html>
 	
