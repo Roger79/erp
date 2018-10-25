@@ -13,9 +13,8 @@ gem 'puma'
 gem 'uglifier'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
-gem 'bootstrap', '~> 4.1.3'
-gem 'bootstrap-sass', '~> 3.3.7'
-gem 'sass-rails', '>= 3.2'
+gem 'bootstrap-sass'
+gem 'sass-rails'
 gem 'jquery-rails', '~> 4.2'
 
 # Use CoffeeScript for .coffee assets and views
